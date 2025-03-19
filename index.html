@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Your Website</title>
+</head>
+<body>
+    <!-- Your website content goes here -->
+
+    <!-- Add this script at the end of the body -->
+    <script>
+        // Configure the Live2D Widget with the correct relative path
+        const live2d_path = "dist/";  // Points to your dist directory
+        
+        // Initialize Live2D Widget settings
+        const live2d_settings = {
+            "waifuPath": live2d_path + "waifu-tips.json",
+            "apiPath": "https://live2d.fghrsh.net/api/",
+            "tools": ["hitokoto", "asteroids", "switch-model", "switch-texture", "photo", "info", "quit"]
+        };
+    </script>
+    <script src="dist/autoload.js"></script>
+</body>
+</html>
